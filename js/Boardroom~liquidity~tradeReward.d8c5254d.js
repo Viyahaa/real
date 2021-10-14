@@ -161,6 +161,34 @@
                       ],
                       staticClass: "home__banner-title",
                     },
+					[
+                  s(
+                    "h2",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: "Eth" != t.chainName,
+                          expression: "chainName!='Eth'",
+                        },
+                      ],
+                      staticClass: "home__banner-title",
+                    },
+					[
+                  s(
+                    "h1",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: "Ftm" != t.chainName,
+                          expression: "chainName!='Ftm'",
+                        },
+                      ],
+                      staticClass: "home__banner-title",
+                    },
                     [
                       t._v(
                         " " +
@@ -169,6 +197,10 @@
                               ? t.$t("MDEForEcoEurrencyTrading1")
                               : 56 == t.chainId
                               ? t.$t("MDEForEcoEurrencyTrading2")
+							  : 1 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading3")
+							  : 250 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading4")
                               : t.$t("MDEForEcoEurrencyTrading3")
                           ) +
                           " "
@@ -454,7 +486,11 @@
                               ? t.$t("MDEForEcoEurrencyTrading1")
                               : 56 == t.chainId
                               ? t.$t("MDEForEcoEurrencyTrading2")
-                              : t.$t("MDEForEcoEurrencyTrading3")
+							  : 1 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading3")
+							  : 250 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading4")
+                              : t.$t("MDEForEcoEurrencyTrading5")
                           ) +
                           " "
                       ),

@@ -81,6 +81,30 @@
                           expression: "chainName!='Bsc'",
                         },
                       ],
+					  [
+                  a(
+                    "h2",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: "Eth" != t.chainName,
+                          expression: "chainName!='Eth'",
+                        },
+                      ],
+					  [
+                  a(
+                    "h1",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: "Ftm" != t.chainName,
+                          expression: "chainName!='Ftm'",
+                        },
+                      ],
                       staticClass: "home__banner-title",
                     },
                     [
@@ -91,7 +115,11 @@
                               ? t.$t("MDEForEcoEurrencyTrading1")
                               : 56 == t.chainId
                               ? t.$t("MDEForEcoEurrencyTrading2")
-                              : t.$t("MDEForEcoEurrencyTrading3")
+							  : 1 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading3")
+							  : 250 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading4")
+                              : t.$t("MDEForEcoEurrencyTrading5")
                           ) +
                           " "
                       ),
@@ -140,9 +168,9 @@
                         "p",
                         { staticClass: "liquidity-mdx ban-center" },
                         [
-                          t._v(" " + t._s(t.$t("MDXtotal")) + " "),
+                          t._v(" " + t._s(t.$t("VINEtotal")) + " "),
                           a("CountUp", {
-                            attrs: { endVal: t.liquidity_mdex || 0 },
+                            attrs: { endVal: t.liquidity_mdex || 0 },	
                           }),
                           t._v(" USDT "),
                         ],
@@ -376,7 +404,11 @@
                               ? t.$t("MDEForEcoEurrencyTrading1")
                               : 56 == t.chainId
                               ? t.$t("MDEForEcoEurrencyTrading2")
-                              : t.$t("MDEForEcoEurrencyTrading3")
+							  : 1 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading3")
+							  : 250 == t.chainId
+                              ? t.$t("MDEForEcoEurrencyTrading4")
+                              : t.$t("MDEForEcoEurrencyTrading5")
                           ) +
                           " "
                       ),
@@ -413,7 +445,11 @@
                               ? t.$t("poolDescribe1")
                               : 56 == t.chainId
                               ? t.$t("poolDescribe2")
-                              : t.$t("poolDescribe3")
+							  : 1 == t.chainId
+                              ? t.$t("poolDescribe3")
+							  : 250 == t.chainId
+                              ? t.$t("poolDescribe4")
+                              : t.$t("poolDescribe5")
                           ) +
                           " "
                       ),
@@ -519,6 +555,11 @@
                     ? " Bsc-home-en"
                     : "Bsc-home-zh-CN";
                 return "/" == this.routerName && "Bsc" == this.chainName
+                  ? t
+                  : this.chainName;
+				  ? " Eth-home-en"
+                    : "Eth-home-zh-CN";
+                return "/" == this.routerName && "Eth" == this.chainName
                   ? t
                   : this.chainName;
               },
@@ -1327,8 +1368,8 @@
                   n.name.includes(" LP") &&
                     (this.link = "https://"
                       .concat(
-                        56 == this.chainId ? "bsc" : "ht",
-                        ".mdex.com/#/add/"
+                        56 == this.chainId ? "bsc" : "eth" : "ftm" : "ht",
+                        ".emevinefinance.com/#/add/"
                       )
                       .concat(n.token_main, "/")
                       .concat(n.token_sec, "?")
@@ -1351,8 +1392,8 @@
                   l.pool_name.includes("/") &&
                     (this.link = "https://"
                       .concat(
-                        56 == this.chainId ? "bsc" : "ht",
-                        ".mdex.com/#/add/"
+                        56 == this.chainId ? "bsc" : "eth" : "ftm" : "ht",
+                        ".emevinefinance.com/#/add/"
                       )
                       .concat(l.token0, "/")
                       .concat(l.token1, "?")
@@ -1400,7 +1441,7 @@
               var t =
                 arguments.length > 0 && void 0 !== arguments[0]
                   ? arguments[0]
-                  : "MDX";
+                  : "VINE";
               return this.globalGetImgUrl(this.coinConfig[t.toLowerCase()]);
             },
             getLpImgUrl: function (t) {

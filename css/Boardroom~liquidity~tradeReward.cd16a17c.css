@@ -335,6 +335,22 @@ input[data-v-ef910fec] {
     background-size: cover;
     background-position: 50%;
   }
+  .Eth[data-v-3cbe7340] {
+    background-image: url(../img/Eth-banner-pc.52cd4f80.png);
+  }
+  .Ftm[data-v-3cbe7340],
+  .Eth[data-v-3cbe7340] {
+    background-size: cover;
+    background-position: 50%;
+  }
+  .Ftm[data-v-3cbe7340] {
+    background-image: url(../img/Ftm-banner-pc.8cbb9b47.png);
+  }
+  .Ftm-home-en[data-v-3cbe7340] {
+    background-image: url(../img/Ftm-banner-pc.8cbb9b47.png);
+    background-size: cover;
+    background-position: 50%;
+  }
   .h5[data-v-3cbe7340] {
     display: none;
   }
@@ -444,7 +460,7 @@ input[data-v-ef910fec] {
     display: none;
   }
   .h5[data-v-3cbe7340] {
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
   }
   .title-banner[data-v-3cbe7340] {
@@ -516,7 +532,7 @@ input[data-v-ef910fec] {
   }
   .li-banner-total[data-v-3cbe7340] {
     height: 77px;
-    width: 92%;
+    width: 100%;
     background: #fff;
     display: block;
     border-radius: 8px;

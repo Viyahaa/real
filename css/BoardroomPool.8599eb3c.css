@@ -12,6 +12,16 @@
   background: #2e2e2e;
   color: #ffca13;
 }
+.Eth .button-wrap button[data-v-6f35db98],
+.Eth .confirm[data-v-6f35db98] {
+  background: #2e2e2e;
+  color: #ff3452;
+}
+.Ftm .button-wrap button[data-v-6f35db98],
+.Ftm .confirm[data-v-6f35db98] {
+  background: #2e2e2e;
+  color: #da5232;
+}
 .modal-enter[data-v-6f35db98],
 .modal-leave-active[data-v-6f35db98] {
   opacity: 0;
@@ -256,6 +266,16 @@
   background: #2e2e2e;
   color: #ffca13;
 }
+.Eth .button-wrap button[data-v-66698610],
+.Eth .confirm[data-v-66698610] {
+  background: #2e2e2e;
+  color: #ff3452;
+}
+.Bsc .button-wrap button[data-v-66698610],
+.Bsc .confirm[data-v-66698610] {
+  background: #2e2e2e;
+  color: #da5232;
+}
 .modal-enter[data-v-66698610],
 .modal-leave-active[data-v-66698610] {
   opacity: 0;
@@ -486,6 +506,7 @@
     font-weight: 600;
     box-shadow: 0 10px 10px 0 rgba(44, 114, 244, 0.2);
   }
+  
 }
 button[data-v-66698610]:disabled {
   color: #808eb5 !important;
@@ -532,6 +553,48 @@ button[data-v-66698610]:disabled {
 .Bsc-home .act-title p[data-v-3cbe7340]:last-child,
 .Bsc .act-title p[data-v-3cbe7340]:last-child {
   background: #ffca13;
+}
+.Eth[data-v-3cbe7340] {
+  background: linear-gradient(54deg, #13165b, #060a35);
+}
+.Eth .eth-home[data-v-3cbe7340] {
+  padding-top: 15px;
+}
+.Eth .liquidity-mdx[data-v-3cbe7340] {
+  background: linear-gradient(270deg, #05d2bf, #02c09f);
+  color: #fff;
+}
+.Eth .new-list-white-banner[data-v-3cbe7340] {
+  background: #03ad90;
+  color: #fff;
+}
+.Eth .new-banner-btn-dra[data-v-3cbe7340] {
+  background: #2f6263;
+  color: #fff;
+}
+.Eth .act-title p[data-v-3cbe7340]:last-child {
+  background: #2f6263;
+}
+.Ftm[data-v-3cbe7340] {
+  background: linear-gradient(54deg, #13165b, #060a35);
+}
+.Ftm .ftm-home[data-v-3cbe7340] {
+  padding-top: 15px;
+}
+.Ftm .liquidity-mdx[data-v-3cbe7340] {
+  background: linear-gradient(270deg, #05d2bf, #02c09f);
+  color: #fff;
+}
+.Ftm .new-list-white-banner[data-v-3cbe7340] {
+  background: #f3ad90;
+  color: #fff;
+}
+.Ftm .new-banner-btn-dra[data-v-3cbe7340] {
+  background: #27778e;
+  color: #fff;
+}
+.Ftm .act-title p[data-v-3cbe7340]:last-child {
+  background: #27778e;
 }
 @media screen and (min-width: 450px) {
   .Heco[data-v-3cbe7340] {
@@ -664,7 +727,7 @@ button[data-v-66698610]:disabled {
     display: none;
   }
   .h5[data-v-3cbe7340] {
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
   }
   .title-banner[data-v-3cbe7340] {
@@ -736,7 +799,7 @@ button[data-v-66698610]:disabled {
   }
   .li-banner-total[data-v-3cbe7340] {
     height: 77px;
-    width: 92%;
+    width: 100%;
     background: #fff;
     display: block;
     border-radius: 8px;

@@ -863,7 +863,7 @@
                     n("CountUp", {
                       attrs: { endVal: Number(t.item.alloc_mdx_amt / 1e18) },
                     }),
-                    t._v("MDX "),
+                    t._v("VINE "),
                   ],
                   1
                 ),
@@ -928,7 +928,7 @@
                         ),
                       },
                     }),
-                    t._v("MDX"),
+                    t._v("VINE"),
                   ],
                   1
                 ),
@@ -1078,7 +1078,7 @@
                 if (t) {
                   if (0 === this.classifyArr.length) {
                     var e = {},
-                      n = ["WHT", "MDX", "USDT", "HBTC", "HUSD", "ETH"];
+                      n = ["WHT", "VINE", "USDT", "HBTC", "HUSD", "ETH"];
                     n.forEach(function (t) {
                       e[t] = "";
                     });
@@ -1102,7 +1102,7 @@
               return [
                 { name: this.$t("all"), show: !0 },
                 { name: "WHT", show: !1 },
-                { name: "MDX", show: !1 },
+                { name: "VINE", show: !1 },
                 { name: "USDT", show: !1 },
                 { name: "HBTC", show: !1 },
                 { name: "HUSD", show: !1 },
@@ -1115,7 +1115,7 @@
                 { name: "USDT", show: !1 },
                 { name: "ETH", show: !1 },
                 { name: "BNB", show: !1 },
-                { name: "MDX", show: !1 },
+                { name: "VINE", show: !1 },
               ];
             },
             mobileCountUpOptions: function () {
@@ -1257,8 +1257,8 @@
               window.open(
                 "https://"
                   .concat(
-                    56 == this.chainId ? "bsc" : "ht",
-                    ".mdex.com/#/swap?inputCurrency="
+                    56 == this.chainId ? "bsc" : "eth" : "ftm" : "ht",
+                    ".emevinefinance.com/#/swap?inputCurrency="
                   )
                   .concat(t.token0, "&outputCurrency=")
                   .concat(t.token1),
@@ -1270,7 +1270,7 @@
             Withdrawal: function () {
               var t = this,
                 e = this.miningContract,
-                n = "Withdrawal ".concat(this.userReward, " MDX"),
+                n = "Withdrawal ".concat(this.userReward, " VINE"),
                 s = this.$overalltip({ type: "loading", msg: n }),
                 a =
                   this.$store.state.account.address ||

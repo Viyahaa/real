@@ -465,7 +465,7 @@
                     ? e("div", { staticClass: "boardroom__total-warp" }, [
                         e("div", { staticClass: "boardroom-total__item" }, [
                           e("div", { staticClass: "total__key" }, [
-                            t._v(t._s(t.$t("AmountToBeRepurchased"))),
+                            t._v(t._s(t.$t("Buyback amount"))),
                           ]),
                           e(
                             "div",
@@ -481,7 +481,7 @@
                         ]),
                         e("div", { staticClass: "boardroom-total__item" }, [
                           e("div", { staticClass: "total__key" }, [
-                            t._v(t._s(t.$t("RepurchasePrice"))),
+                            t._v(t._s(t.$t("Buyback Price"))),
                           ]),
                           e("div", { staticClass: "total__value" }, [
                             t._v(
@@ -620,6 +620,8 @@
                                   "Heco" == t.chainName
                                     ? t.$t("text2_heco")
                                     : t.$t("text2_bsc")
+									? t.$t("text2_eth")
+                                    : t.$t("text2_ftm")
                                 ) +
                                 "："
                             ),
@@ -632,6 +634,8 @@
                                 "Heco" == t.chainName
                                   ? t.$t("text3_heco")
                                   : t.$t("text3_bsc")
+								  ? t.$t("text3_eth")
+                                  : t.$t("text3_ftm")
                               )
                             ),
                           ])
@@ -644,6 +648,8 @@
                                   "Heco" == t.chainName
                                     ? t.$t("text4_heco")
                                     : t.$t("text4_bsc")
+									? t.$t("text4_eth")
+                                    : t.$t("text4_ftm")
                                 ) +
                                 "："
                             ),
@@ -736,6 +742,56 @@
                         attrs: {
                           autoTap: !0,
                           list: t.listNameBsc,
+                          inputText: t.isPC
+                            ? t.$t("search")
+                            : t.$t("searchText"),
+                        },
+                        on: {
+                          "change-list": t.onList,
+                          "change-list-item": t.onListItem,
+                          "change-input": function (a) {
+                            t.searchValue = a;
+                          },
+                          onchenck: t.onActionChenck,
+                        },
+                      }),
+					  s("selete-table", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: "Eth" == t.chainName,
+                            expression: "chainName=='Eth'",
+                          },
+                        ],
+                        attrs: {
+                          autoTap: !0,
+                          list: t.listNameEth,
+                          inputText: t.isPC
+                            ? t.$t("search")
+                            : t.$t("searchText"),
+                        },
+                        on: {
+                          "change-list": t.onList,
+                          "change-list-item": t.onListItem,
+                          "change-input": function (a) {
+                            t.searchValue = a;
+                          },
+                          onchenck: t.onActionChenck,
+                        },
+                      }),
+					  s("selete-table", {
+                        directives: [
+                          {
+                            name: "show",
+                            rawName: "v-show",
+                            value: "Ftm" == t.chainName,
+                            expression: "chainName=='Ftm'",
+                          },
+                        ],
+                        attrs: {
+                          autoTap: !0,
+                          list: t.listNameFtm,
                           inputText: t.isPC
                             ? t.$t("search")
                             : t.$t("searchText"),
@@ -1970,6 +2026,28 @@
                                   rawName: "v-show",
                                   value: "Bsc" == t.chainName,
                                   expression: "chainName=='Bsc'",
+                                },
+                              ],
+                              attrs: { src: e("7312") },
+                            }),
+							s("img", {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: "Eth" == t.chainName,
+                                  expression: "chainName=='Eth'",
+                                },
+                              ],
+                              attrs: { src: e("7312") },
+                            }),
+							s("img", {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: "Ftm" == t.chainName,
+                                  expression: "chainName=='Ftm'",
                                 },
                               ],
                               attrs: { src: e("7312") },

@@ -748,10 +748,16 @@
                     n = [];
                   switch (s) {
                     case "128":
-                      n = ["USDT", "ETH", "MDX", "HT", "HUSD"];
+                      n = ["USDT", "ETH", "VINE", "HT", "HUSD"];
                       break;
                     case "56":
-                      n = ["BUSDT", "ETH", "MDX", "BNB"];
+                      n = ["BUSDT", "ETH", "VINE", "BNB"];
+                      break;
+					case "1":
+                      n = ["USDT", "ETH", "VINE", "BNB"];
+                      break;
+					case "250":
+                      n = ["USDT", "ETH", "VINE", "BNB"];
                       break;
                   }
                   n.forEach(function (t) {
