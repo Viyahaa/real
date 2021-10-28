@@ -1368,7 +1368,7 @@
                   n.name.includes(" LP") &&
                     (this.link = "https://"
                       .concat(
-                        56 == this.chainId ? "bsc" : "eth" : "ftm" : "ht",
+                        56 == this.chainId ? "bsc" : "eth" : "ftm" : "ht": "tomo": "one",
                         ".emevinefinance.com/#/add/"
                       )
                       .concat(n.token_main, "/")

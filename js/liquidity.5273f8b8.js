@@ -536,7 +536,7 @@
                                                   t.poolReward[e.row.pid] || 0,
                                               },
                                             }),
-                                            t._v(" MDX "),
+                                            t._v(" VINE "),
                                           ],
                                           1
                                         ),
@@ -754,10 +754,10 @@
                       n = ["BUSDT", "ETH", "VINE", "BNB"];
                       break;
 					case "1":
-                      n = ["USDT", "ETH", "VINE", "BNB"];
+                      n = ["USDT", "ETH", "VINE"];
                       break;
 					case "250":
-                      n = ["USDT", "ETH", "VINE", "BNB"];
+                      n = ["USDT", "ETH", "VINE", "FTM"];
                       break;
                   }
                   n.forEach(function (t) {
@@ -781,7 +781,7 @@
                     { name: this.$t("all"), show: !0 },
                     { name: "USDT", show: !1 },
                     { name: "ETH", show: !1 },
-                    { name: "MDX", show: !1 },
+                    { name: "VINE", show: !1 },
                     { name: "HT", show: !1 },
                     { name: "HUSD", show: !1 },
                   ],
@@ -794,7 +794,7 @@
                     { name: this.$t("all"), show: !0 },
                     { name: "USDT", show: !1 },
                     { name: "ETH", show: !1 },
-                    { name: "MDX", show: !1 },
+                    { name: "VINE", show: !1 },
                     { name: "HT", show: !1 },
                     { name: "HUSD", show: !1 },
                   ],
@@ -812,7 +812,7 @@
                     { name: "BUSD", show: !1 },
                     { name: "ETH", show: !1 },
                     { name: "BNB", show: !1 },
-                    { name: "MDX", show: !1 },
+                    { name: "VINE", show: !1 },
                   ],
                 },
                 { name: this.$t("currency"), show: !1 },
@@ -853,7 +853,7 @@
                   return Object(i["a"])(
                     Object(i["a"])({}, t),
                     {},
-                    { earnToken: "MDX" }
+                    { earnToken: "VINE" }
                   );
                 })),
                 e.forEach(function (e) {
@@ -966,16 +966,16 @@
               this.setSort(e.toString());
             },
             setdmx_show: function () {
-              return this.isPC ? "" : "MDX";
+              return this.isPC ? "" : "VINE";
             },
             setdmx: function () {
-              return this.isPC ? "MDX" : "";
+              return this.isPC ? "VINE" : "";
             },
             getApy: function (t) {
               return this.apylist[t] ? 365 * this.apylist[t].pool_apy : 0;
             },
             toPool: function (t) {
-              this.$router.push({ path: "/pool/liquidity/mdx/".concat(t.pid) });
+              this.$router.push({ path: "/pool/liquidity/vine/".concat(t.pid) });
             },
             getImg: function (t) {
               return this.globalGetImgUrl(t.lpAddress);
@@ -1060,7 +1060,7 @@
                     ? s("span", { staticClass: "span" }, [
                         t._v(t._s(t.item.earnedToken)),
                       ])
-                    : s("span", { staticClass: "span" }, [t._v("MDX")]),
+                    : s("span", { staticClass: "span" }, [t._v("VINE")]),
                 ]),
                 s(
                   "p",
@@ -1134,8 +1134,8 @@
                   (this.after = ""),
                   (this.earned = this.item.earnedToken))
                 : ((this.per = ""),
-                  (this.after = "MDX"),
-                  (this.earned = "MDX"));
+                  (this.after = "VINE"),
+                  (this.earned = "VINE"));
             },
           },
         },

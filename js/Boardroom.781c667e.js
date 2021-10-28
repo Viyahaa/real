@@ -1186,7 +1186,7 @@
         f = e("896e"),
         C = e("fcd9"),
         w = {
-          name: "Boardroom",
+          name: "Stockroom",
           data: function () {
             return {
               PersonalIncome: 0,
