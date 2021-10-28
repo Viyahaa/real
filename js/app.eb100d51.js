@@ -5077,9 +5077,9 @@
           id: 128,
           label: "HECO",
           name: "Heco",
-          exchangeUrl: "http://127.0.0.1:5502/homepage/#/swap",
-          fundUrl: "http://127.0.0.1:5502/homepage/#/pool",
-          transactionUrl: "http://127.0.0.1:5502/homepage/#/swap",
+          exchangeUrl: "https://ht.emevinefinance.com/#/swap",
+          fundUrl: "https://ht.emevinefinance.com/#/pool",
+          transactionUrl: "https://ht.emevinefinance.com/#/swap",
           CheckHashUrl: "https://hecoinfo.com/tx/",
         },
         {
