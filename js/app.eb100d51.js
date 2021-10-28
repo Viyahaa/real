@@ -2737,9 +2737,9 @@
                         attrs: {
                           href:
                             "Heco" == e.chainName
-                              ? "https://emevinefinance.com/#/swap?" +
+                              ? "https://ht.emevinefinance.com/#/swap?" +
                                 e.globalLanguage
-                              : "https://emevinefinance.com/#/swap?" +
+                              : "https://ht.emevinefinance.com/#/swap?" +
                                 e.globalLanguage,
                         },
                       },
