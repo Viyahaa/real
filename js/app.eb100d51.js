@@ -5077,19 +5077,19 @@
           id: 128,
           label: "HECO",
           name: "Heco",
-          exchangeUrl: "https://heco.emevinefinance.com/#/swap",
-          fundUrl: "https://heco.emevinefinance.com/#/hpool",
-          transactionUrl: "https://heco.emevinefinance.com/#/hswap",
-          CheckHashUrl: " https://hecoinfo.com/tx/",
+          exchangeUrl: "http://127.0.0.1:5502/homepage/#/swap",
+          fundUrl: "http://127.0.0.1:5502/homepage/#/pool",
+          transactionUrl: "http://127.0.0.1:5502/homepage/#/swap",
+          CheckHashUrl: "https://hecoinfo.com/tx/",
         },
         {
           id: 1,
           label: "ETH",
           name: "ETH",
-          exchangeUrl: ""https://eth.emevinefinance.com/#/swap",
-          fundUrl: "https://eth.emevinefinance.com/#/ethpool",
-          transactionUrl: "https://eth.emevinefinance.com/#/ethswap",
-          CheckHashUrl: "https://etherscan.io/tx/",
+          exchangeUrl: "http://127.0.0.1:5502/homepage/#/ethswap",
+          fundUrl: "http://127.0.0.1:5502/homepage/#ethpool",
+          transactionUrl: "http://127.0.0.1:5502/homepage/#/ethswap",
+          CheckHashUrl: "https://hecoinfo.com/tx/",
         },
         {
           id: 56,
@@ -5104,27 +5104,27 @@
           id: 250,
           label: "FTM",
           name: "FTM",
-          exchangeUrl: "https://ftm.emevinefinance.com/#/swap",
-          fundUrl: "https://ftm.emevinefinance.com/#/ftmpool",
-          transactionUrl: "https://ftm.emevinefinance.com/#/ftmswap",
+          exchangeUrl: "http://127.0.0.1:5502/homepage/#/ftmswap",
+          fundUrl: "http://127.0.0.1:5502/homepage/#/tmpool",
+          transactionUrl: "http://127.0.0.1:5502/homepage/#/ftmswap",
           CheckHashUrl: "https://ftmscan.com/tx/",
         },
 		{
           id: 88,
           label: "TOMO",
           name: "TOMOCHAIN",
-          exchangeUrl: "https://tomo.emevinefinance.com/#/swap",
-          fundUrl: "https://tomo.emevinefinance.com/#/tomopool",
-          transactionUrl: "https://tomo.emevinefinance.com/#/tomoswap",
+          exchangeUrl: "http://127.0.0.1:5502/#/tomoswap",
+          fundUrl: "http://127.0.0.1:5502/#/tomopool",
+          transactionUrl: "http://127.0.0.1:5502/#/tomoswap",
           CheckHashUrl: "https://tomocoin.io/tx/",
         },
 		{
           id: 1666600000,
           label: "ONE",
           name: "HARMONY",
-          exchangeUrl: "https://bsc.emevinefinance.com/#/swap",
-          fundUrl: "https://bsc.emevinefinance.com/#/onepool",
-          transactionUrl: "https://bsc.emevinefinance.com/#/oneswap",
+          exchangeUrl: "http://127.0.0.1:5502/#/harmonyswap",
+          fundUrl: "http://127.0.0.1:5502/#/harmonypool",
+          transactionUrl: "http://127.0.0.1:5502/#/harmonyswap",
           CheckHashUrl: "https://explorer.harmony.one/tx/",
         },
       ],
@@ -5628,7 +5628,7 @@
       "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAoCAYAAACFFRgXAAAEVUlEQVRYR9WZWexdUxTGfx9CzCG0oTU8tJHwJEGrhgcJakqRkjSpKNqkVCSiL6JFgsQshqJKSI0JgtZUQSKiKRIPHowRomaNGhJTwpKPfW7Ovffcc/b5/0/TWo/3ruE7+6y91rfWEeOQiNgDOBk4GpgE7AXsDewEfAt8BXwNfAA8C6yT9Pc4QqK2xhGxA7AAmA3MALZq4WMD8Bxwl6Q3W9j1VLMBR8Q2wLnAlekkxxKvbPMUsETSe20cZQGOiOnAA8ABbZxn6Do9lgMXS/ojQ785JSJiHnA3sF2OwzHqrANOl+R8r5WRJxwRzs0b/fRNTjr63xf0VElv1/mrA3wDsLgjMLluNgLTJX00yqAScEqD+3OjdKz3YQL9Y5XfIcARcQTwKrBtx0DauHsJOFHSX4NGfYAjYmvgXeDANt43ke4CSfc2AXZDuKdDAC5bq4EXgM+BXYGjgPmlN2idT4CpA3F9CadI+q38e++EI2JH4OOaprA+nf5JmQ/0M3CaJKdXn6S6fl3qeg8BdwKzKvxeKunaUYAvBG6vAbMEcOVwgDMyQM+R9FiTXkRckrpnADsP6PviTZT0Z/F7+YRfAY6pCTBL0qqIsI3BXwE456vkfUmN9yAiJqT7sjvwBFQ2shMkvdgHOCJ2A74DzBdGyVxJDxd/RsQhwDXAcRUGN0vyyTVKRJjtPVJxuoWtidIFg4DPAlY2eF8p6eyKfDwcWAocW3rgxZJuakIbEVMA1906xvclsI8kp8x/ryAibgUuagjgmniQJAcYkohw/rmG72sQkl7LAHwk8HqTnn1K8qXvAX488ds6W5enX4DzJbkCjFsi4hRgVYYjt+t/+XNxwm8kMl5ne44kU8zOJCIuA67OcOjy+HQZ8KfA/g2GT0rylNGZRIQbyswMh4skuVb3TjgHsPVN/57JCNCoEhHbA98AuzQqwxDgnJSwX+fuQkmPZgSpVYmI84AhrjDCaCglci5d4etl4HlgWbkDtX2AiHgHODjT7rCC2Lcpa4XvyyVdlRmoUi0i5qRmketmsiTX414O5zSOwvnv3kVIcitvLRGxJ+BJ2TuNHPGcN2mwceS05rJzU77rgVsk/ZQT1TppVeDylMv4bLZc0sIiRhvyU4XLM9jsKgo5qJzA+rK2LY0zJa2pArwIuCPztL4AHjQdzRnNE7m6z/w403+h5rc3YRS9rCPwzjkzs+8TWVlf5FQTgIg4E7jNvLZJt+L/pZL6OuHgTFc3Inm5t8wboIKIjAKQeK6BzgWmjQGoTTwiTZX0a9l+LEOoaZ4Zm8nIZ8APichPThvM/YBDa8h9Lv75kpxGfbKljvkumcc3jvnFo2zmRYq3PqaTrkBDsqWtqjx0Tmu9qkpF/v+1DBxIj029bn0r7TBcGWplcy+0PSeuSAttc5RGyQKcUqTrTwae5bzZ6f6TQfmxO/go469JKyStbTzONlUix1nDZy+PP6aGzkvv7Ax07Xg/e/0DmwKEOJv1KO8AAAAASUVORK5CYII=";
   },
   "6bab": function (e, t, n) {
-    e.exports = n.p + "img/ pc-pending.5226b126.gif";
+    e.exports = n.p + "img/pc-pending.5226b126.gif";
   },
   "6deb": function (e, t, n) {
     "use strict";
@@ -5798,10 +5798,7 @@
       o = {
         128: { liquidity: i, boardroom: a, mining: r },
         56: { liquidity: s, boardroom: a, mining: r },
-		1: { liquidity: s, boardroom: a, mining: r },
 		250: { liquidity: s, boardroom: a, mining: r },
-		88: { liquidity: s, boardroom: a, mining: r },
-		1666600000: { liquidity: s, boardroom: a, mining: r },
       };
     t["a"] = o;
   },
@@ -5868,7 +5865,7 @@
         ClaimedSuccessfully: " successfully",
         ViewRecords: "View Records",
         Home: "Home",
-        lightText: "Trading Made Easy. The first All-In-One platform",
+        lightText: "Trading made easy. The first All-In-One platform",
         boardroomText: "Staking VINE & VINE-USDT LP to claim your HT rewards",
         MDXtotal: "Total",
         MDXtotals: "Total Value Locked",
