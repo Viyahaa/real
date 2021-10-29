@@ -1464,12 +1464,12 @@
                       [
                         i("img", {
                           staticClass: "home-mechanism__item-logo",
-                          attrs: { src: s("295e") },
+                          attrs: { src: s("2 95e") },
                         }),
                       ]
                     ),
                   ]),
-                  i("div", { staticClass: "home-mechanism__item" }, [
+                  i(" div", { staticClass: "home-mechanism__item" }, [
                     i("a", { attrs: { href: t.certik, target: "_blank" } }, [
                       i("img", {
                         staticClass: "home-mechanism__item-logo",
