@@ -1442,7 +1442,7 @@
                   i("div", { staticClass: "home-using__item" }, [
                     i("div", { staticClass: "home-using__item-icon icon-3" }),
                     i("div", { staticClass: "home-using__item-title" }, [
-                      t._v("Dao"),
+                      t._v(" "),
                     ]),
                     i("div", { staticClass: "home-using__item-describe" }, [
                       t._v(t._s(t.$t("DaoDesc"))),
@@ -1451,13 +1451,9 @@
                 ]),
               ]),
             ]),
-            i("div", { staticClass: "home-mechanism home-mechanism-h5" }, [
-              i("div", { staticClass: "container" }, [
-                i("div", { staticClass: "home-mechanism__title" }, [
-                  t._v(t._s(t.$t("MDXCheck"))),
-                ]),
-                i("div", { staticClass: "home-mechanism__content" }, [
-                  i("div", { staticClass: "home-mechanism__item" }, [
+			
+                i(" div", { staticClass: " home-mechanism__content" }, [
+                  i(" div", { staticClass: " home-mechanism__item" }, [
                     i(
                       "a",
                       { attrs: { href: t.fairyproof, target: "_blank" } },
