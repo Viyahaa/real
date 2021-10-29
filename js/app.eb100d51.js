@@ -2562,11 +2562,11 @@
                         "a",
                         {
                           attrs: {
-                            href: "https://forms.gle/b6SCc4cXzn7apFhk7",
+                            href: " https://forms.gle/b6SCc4cXzn7apFhk7",
                             target: "_blank",
                           },
                         },
-                        [e._v(e._s(e.$t("Launchpad Aplication")))]
+                        [e._v(e._s(e.$t("Vinepad Application")))]
                       ),
                     ]),
                   ]),

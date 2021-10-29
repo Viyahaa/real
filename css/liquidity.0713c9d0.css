@@ -101,7 +101,8 @@
   margin-left: 2px;
 }
 @media screen and (min-width: 700px) {
-  .Heco .btn-icon[data-v-f1c615ca] {
+  .Heco .btn-icon[
+  ] {
     border: 1px solid #2c72f4;
     color: #2c72f4;
   }
@@ -109,8 +110,8 @@
   .Heco .btn-icon a[data-v-f1c615ca]:visited {
     color: #2c72f4;
   }
-  .Bsc .btn-icon[data-v-f1c615ca] {
-    border: 1px solid #171717;
+  .Bsc .btn-icon[data-v-f1c6
+  rder: 1px solid #171717;
     color: #171717;
   }
   .Bsc .btn-icon a[data-v-f1c615ca]:link,
